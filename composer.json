@@ -1,0 +1,43 @@
+{
+    "name": "grnspc/news-system",
+    "description": "Laravel News System (Livewire and Tailwind)",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nathan Robinson",
+            "email": "grnspc.dev@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/contracts": "^8.0",
+        "cviebrock/eloquent-sluggable": "^8.0",
+        "livewire/livewire": "^2.4"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.3",
+        "fakerphp/faker": "^1.9.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "GrnSpc\\News\\": "src",
+            "GrnSpc\\News\\Database\\Factories\\": "database/factories"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GrnSpc\\News\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GrnSpc\\News\\NewsServiceProvider"
+            ]
+        }
+    }
+}
